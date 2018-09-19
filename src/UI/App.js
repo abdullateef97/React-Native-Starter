@@ -2,22 +2,17 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import  {Provider} from 'react-redux';
-import {createStore, applyMiddleware} from 'redux'
-import ReduxThunk from 'redux-thunk';
-import reducers from './src/store/Stores'
-import Index from './src'
+
 
 
 export default class App extends Component {
   
   render() {
-    const createStoreWithMiddleware = applyMiddleware(ReduxThunk)(createStore)
     return (
-      <Provider store={createStoreWithMiddleware(reducers)}>
-       <Index/>
-      </Provider>
-      
+        <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.instructions}>To get started, edit App.js</Text>
+      </View>      
     );
   }
 }
