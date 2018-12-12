@@ -12,7 +12,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <Text>jkkkkjjjjjkh</Text>
+      <Text>Fungbe App</Text>
     )
   }
 }
